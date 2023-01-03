@@ -1,11 +1,19 @@
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [state,setState]=useState(false)
   return (
     <div className="App">
       <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
+        {/* <img src="Octocat.png" className="App-logo" alt="logo" /> */}
+        {state&&<p>
+          You are gayyyyyyyy
+        </p>}
+        <button onClick={()=>setState(true)}>
+          Click here
+        </button>
+        {/* <p>
           GitHub Codespaces <span className="heart">♥️</span> React
         </p>
         <p className="small">
@@ -20,7 +28,7 @@ function App() {
           >
             Learn React
           </a>
-        </p>
+        </p> */}
       </header>
     </div>
   );
