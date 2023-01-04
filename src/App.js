@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         {/* <img src="Octocat.png" className="App-logo" alt="logo" /> */}
         {state&&<p>
-          You are gayyyyyyyy
+          Close the site if you are gayyyy
         </p>}
         <button onClick={()=>setState(true)}>
           Click here
